@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="방송영상·OTT 트렌드 2026 Vol.1" content="방송영상·OTT 트렌드 2026 Vol.1" />
+  <meta property="og:image" content="./img/assets/meta.png">
+  <title>방송영상 · OTT 트렌드</title>
+
+  <link rel="stylesheet" href="./css/variables.css" />
+  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="./css/detail.css" />
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GH6ZRLY8VY"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-GH6ZRLY8VY');
+  </script>
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/assets/favicon.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/assets/favicon.png" />
+
+  
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="./index.html" class="logo-wrap">
+        <img src="./img/assets/logo-white.png" alt="로고" class="logo" />
+      </a>
+
+      <div class="nav-right">
+        <div class="nav">
+          <a href="./index.html#spotlight" class="nav-item">스포트라이트</a>
+          <a href="./index.html#trend" class="nav-item">트렌드 하이라이트</a>
+          <a href="./index.html#people" class="nav-item">피플 인사이트</a>
+          <a href="./index.html#global" class="nav-item">글로벌 마켓 리포트</a>
+          <a href="./index.html#data-point" class="nav-item">데이터 포인트</a>
+        </div>
+
+        <button type="button" id="menu-toggle" class="hamburger">
+          <span></span><span></span><span></span>
+        </button>
+
+        <div class="vol-info">2026 Vol.2 (7월호)</div>
+      </div>
+    </div>
+
+    <!-- Fullscreen Mobile Modal -->
+    <div id="mobile-menu" class="mobile-menu">
+      <div class="menu-header">
+        <p class="menu-title">메뉴</p>
+        <div class="menu-right">
+          <div class="vol-info">2026 Vol.2 (7월호)</div>
+          <button type="button" id="menu-close">
+            <img src="./img/assets/close.png" alt="닫기" class="close-btn" />
+          </button>
+        </div>
+      </div>
+      <div id="menu-content" class="menu-content"></div>
+    </div>
+  </header>
+
+  <!-- Detail -->
+  <div>
+    <div id="progress-bar-container">
+      <div id="progress-bar"></div>
+    </div>
+
+    <!-- 배너 영역 -->
+    <div class="spotlight-banner" style="background-image: url('./img/manuscript6/thum.png');">
+      <div class="banner-overlay"></div>
+      <div class="banner-inner">
+        <div class="banner-meta">
+          <p class="banner-number">트렌드 하이라이트 3</p>
+        </div>
+        <p class="banner-title">
+          획일화된 알고리즘을 넘어:<br>아시아 로컬 OTT의 틈새 전략과 공존의 기술
+        </p>
+      </div>
+    </div>
+
+    <!-- 본문 영역 -->
+    <div>
+
+      <!-- 리드 문단 -->
+      <div class="lead-section">
+        <div class="lead-container">
+          <p class="lead-text"><span class="quotes">“</span>글로벌 OTT가 자본과 알고리즘으로 대중 시장을 장악하는 시대, 아시아의 중소 로컬 플랫폼들은 역설적으로 더 단단한 생존 근거를 확보해 가고 있다. 획일화된 알고리즘이 채우지 못하는 문화적 빈자리가 오히려 이들만의 공고한 거점이 되고 있기 때문이다. 홍콩 기반의 Viu는 K-콘텐츠를 매개로 아시아적 감수성의 매개자로 자리매김했고, 베트남의 VieON은 디아스포라를 하나의 문화 공동체로 결속시켰으며, 태국의 BL 미디어 생태계는 비주류 장르를 국가 소프트파워 산업으로 전환하는 데 성공했다. 이 글은 국내 라프텔∙헤븐리∙모아의 '취향의 수직계열화' 전략과 세 아시아 로컬 플랫폼의 틈새 전략을 분석함으로써, 글로벌 공룡과의 공존을 모색하는 로컬 OTT의 생존 방정식을 탐색한다.<span class="quotes">”</span></p>
+          <p class="lead-author">글. 강보라(연세대학교 커뮤니케이션연구소 전문연구원)</p>
+        </div>
+      </div>
+
+      <!-- 메인 -->
+      <div class="main-content">
+        <!-- Section 1 -->
+        <section class="section-block">
+          <div class="subtitle-wrap">
+            <div class="subtitle-bar-desktop"></div>
+
+            <div class="subtitle-inner">
+              <div class="subtitle-bar-mobile"></div>
+              <div class="subtitle-text">글로벌의 틈새, 아시아 중소 OTT의 성장을 살펴보아야 하는 이유</div>
+            </div>
+          </div>
+
+          <div class="section-body">
+            <p class="paragraph">
+              오늘날 미디어 이용자들은 인류 역사상 그 어느 때보다 거대한 콘텐츠의 바다 속에 살고 있다. 재생 버튼 하나로 지구 반대편의 드라마를 고화질로 감상하고, 고도화된 알고리즘은 매 순간 취향을 분석해 '당신이 좋아할 만한 콘텐츠'를 큐레이션 한다. 그런데 정작 수많은 선택지 앞에서 우리는 종종 길을 잃곤 한다. 수십 분간 메인 화면을 스크롤하다 결국 시청을 포기하는, 이른바 '넷플릭스 피로감(Netflix fatigue)'은 이제 현대인의 보편적인 경험이 되었다.<br><br>
+              
+              이 피로감의 본질은 다름 아닌 글로벌 OTT가 지향하는 표준화에 있는 듯하다. 넷플릭스와 같은 글로벌 OTT는 거대 자본을 투입해 전 세계인이 동시에 즐길 수 있는 대작을 생산해 왔다. 그러나 보편적 대중을 타깃으로 설계된 알고리즘은 역설적으로 취향의 하향 평준화를 불러왔고, 사용자는 획일화된 '필터 버블' 안에서 안전하지만 지루한 정서적 고립을 경험하게 되었다.<br><br>
+              
+              사회학자 안드레아스 레크비츠(Andreas Reckwitz)는 그의 저서 &lt;단독성들의 사회(Society of Singularities)&gt;에서 표준화에서 개인화로의 이행을 예리하게 짚어냈다. 산업화 시대가 표준화와 일반성을 추구했다면, 후기 근대 사회는 고유하고 대체 불가능한 것, 즉 '단독성(Singularity)'을 추구한다는 것이다. 미디어 시장도 예외가 아니다. 소비자는 이제 자신의 정체성을 규정하고 세밀한 취향을 대변하는 '나만의 콘텐츠'를 갈망하기 시작했다.<br><br>
+              
+              이러한 전환은 미디어 지형을 재편하고 있다. '모두를 위한 서비스(One-size-fits-all)'가 지배하던 시장은 파편화된 취향의 집합체로 분화 중이다. 글로벌 대형 플랫폼들이 주류 시장을 압도하는 사이, 그들이 미처 해석하지 못하거나 자본의 논리로 소외시킨 틈새들—예컨대 서브컬처, 특정 지역의 미시적 서사, 장르적 탐닉 등이 새로운 비즈니스의 격전지로 부상하고 있다.<br><br>
+              
+              로컬 플랫폼이 가진 가장 강력한 무기는 문화적 근접성이다. 알고리즘은 시청 데이터를 수치화할 수 있지만, 특정 지역의 언어적 뉘앙스나 역사적 맥락 속에 녹아 있는 미묘한 정서까지 번역해내지는 못한다. 현지인들이 매일 소비하는 일상적 대화와 집단적 문화 경험은 글로벌 플랫폼이 쉽게 복제할 수 없는 로컬 OTT만의 독보적인 자산이다.<br><br>
+              
+              흥미로운 점은 이러한 로컬 플랫폼의 부상이 글로벌 OTT와의 제로섬 게임으로 흐르지 않는다는 사실이다. 오늘날의 시청자들은 글로벌 플랫폼으로 보편적 재미를 충족하는 동시에, 특정 장르나 로컬에 특화된 버티컬 플랫폼을 함께 이용하는 '다중 구독(Multi-subscription)' 패턴을 보인다. 대중적 인프라로서 글로벌 플랫폼과 취향의 안식처로서 로컬 플랫폼이 각자의 층위에서 공존하는 산업적 토대가 마련된 것이다.<br><br>
+              
+              이 글에서는 거대 자본이 지배하는 글로벌 OTT 전성시대에 아시아의 중소 로컬 플랫폼들이 어떻게 자신들만의 '문화적 거점'을 구축해 나가고 있는지 살펴보고자 한다. 베트남의 VieON, 홍콩 기반의 Viu, 그리고 태국의 BL 미디어 생태계까지 이들이 선택한 틈새 전략과 그 성과를 분석하는 시도는 향후 국내 콘텐츠 사업자들이 글로벌 시장에서 어떠한 전략적 유연성을 발휘해야 하는지에 대한 나침반이 될 것이다.
+            </p>
+          </div>
+        </section>
+
+        <!-- Section 2 -->
+        <section class="section-block">
+          <div class="subtitle-wrap">
+            <div class="subtitle-bar-desktop"></div>
+
+            <div class="subtitle-inner">
+              <div class="subtitle-bar-mobile"></div>
+              <div class="subtitle-text">국내 사례로 본 '취향의 수직계열화(Verticalization of taste)' 전략</div>
+            </div>
+          </div>
+
+          <div class="section-body">
+            <p class="paragraph">
+              글로벌 OTT 플랫폼들이 막대한 자본을 바탕으로 전 장르를 아우르는 수평적 확장에 집중할 때, 국내 중소 사업자들은 특정 장르의 깊이를 파고드는 '취향의 수직계열화' 전략으로 승부수를 던졌다. 이는 대형 플랫폼이 미처 관리하지 못하는 파편화된 취향을 공략하는 전략이다. 단순한 시청 환경 제공을 넘어 팬덤의 응집까지 이끌어낸다는 점에서 차별적이다.
+            </p>
+
+            <div>
+              <p class="sub-heading">1) 라프텔(Laftel): '덕후'의 언어로 설계된 정교한 UX</p>
+              <p class="paragraph">
+                국내 애니메이션 전문 OTT인 라프텔은 플랫폼이 단순히 콘텐츠를 나열하는 수준을 넘어 특정 문화를 향유하는 방식 자체를 제안해야 함을 증명했다. 라프텔의 성공 비결은 철저히 팬덤의 니즈에 맞춘 '버티컬 서비스'의 정석에 있다.<br><br>
+              </p>
+
+              <div class="paragraph bullet-row">
+                <p>⦁</p>
+                <p><span class="text-brand-bold">아카이빙의 깊이</span>: 고전 명작부터 최신 동시 방영작까지 아우르는 압도적인 라이브러리는 이용자들에게 '이곳에 가면 원하는 모든 것이 있다'는 신뢰를 준다. 특히 불법 스트리밍 사이트에 의존하던 팬덤을 양지로 끌어올리며 '정당한 대가를 지불하고 문화를 향유한다'는 자부심을 심어주었다는 점에서 의미가 있다.<sup>1)</sup></p>
+              </div>
+
+              <div class="paragraph bullet-row bullet-row-gap">
+                <p>⦁</p>
+                <p><span class="text-brand-bold">팬덤 맞춤형 기능</span>: 애니메이션 시청자들이 가장 번거로워하는 오프닝과 엔딩을 자동으로 건너뛰는 기능, 다음 화로 자연스럽게 넘어가는 고도의 시퀀스 설계 등은 대형 플랫폼이 놓치기 쉬운 디테일이다.<sup>2)</sup></p>
+              </div>
+
+              <div class="paragraph bullet-row">
+                <p>⦁</p>
+                <p><span class="text-brand-bold">성과</span>: 정교한 큐레이션과 이용자 친화적 환경은 낮은 이탈률과 높은 유료 전환율로 이어졌으며, 특정 취향에 특화된 버티컬 OTT가 대형 플랫폼의 '보완재'로서 얼마나 강력한 생존력을 갖는지 보여주었다.</p>
+              </div>
+            </div>
+
+            <div>
+              <p class="sub-heading">2) 헤븐리(Heavenly): 장르 특화를 넘어선 글로벌 커뮤니티화</p>
+              <p class="paragraph">
+                여성향 로맨스, 특히 BL(Boys Love) 장르에 특화된 헤븐리는 콘텐츠의 경계를 넘어 '커뮤니티 플랫폼'으로 진화하고 있다. BL은 과거 음지 문화로 치부되기도 했으나 이제는 강력한 구매력을 가진 글로벌 팬덤이 뒷받침된 핵심적인 장르가 되었다.<br><br>
+              </p>
+
+              <div class="paragraph bullet-row">
+                <p>⦁</p>
+                <p><span class="text-brand-bold">팬덤 비즈니스 모델</span>: 헤븐리는 단순한 VOD 제공에 그치지 않고, 배우와의 실시간 소통, 관련 굿즈 판매, 글로벌 팬덤이 결집하는 커뮤니티 기능을 플랫폼 내에 통합했다.<sup>3)</sup> 이는 콘텐츠 감상을 넘어선 '경험의 확장'을 의미한다.</p>
+              </div>
+
+              <div class="paragraph bullet-row bullet-row-gap">
+                <p>⦁</p>
+                <p><span class="text-brand-bold">글로벌 확장성</span>: BL 장르의 특성상 국경을 초월한 팬덤 형성이 용이하다는 점을 활용해 태국, 대만 등 해외의 우수한 장르물을 선제적으로 수급하고 역으로 국내 오리지널 BL 콘텐츠를 해외로 송출하는 허브 역할을 수행하고 있다.<sup>4)</sup></p>
+              </div>
+
+              <div class="paragraph bullet-row">
+                <p>⦁</p>
+                <p><span class="text-brand-bold">성과</span>: 헤븐리는 특정 장르에 대한 깊은 이해도를 바탕으로 팬덤의 충성도를 극대화했는데, 이는 대형 OTT가 시도하기 어려운 기민한 장르 대응력과 글로벌 타겟팅 능력을 입증한 사례로 평가받는다.</p>
+              </div>
+            </div>
+
+            <div>
+              <p class="sub-heading">3) 모아(MOA): OTT 퍼스트로 중드 팬심 공략</p>
+              <p class="paragraph">
+                중화권 콘텐츠 전문 OTT 모아는 과거 중드의 명성을 OTT에서 부활시키는데 성공했다. 뿐만 아니라 최근 중국에서 인기 있는 숏폼 드라마까지 수급하면서 세대를 아우르는 중드 매니아 플랫폼이 되었다.<br><br>
+              </p>
+  
+              <div class="paragraph bullet-row">
+                <p>⦁</p>
+                <p><span class="text-brand-bold">OTT 퍼스트 전략</span>: ‘중화권 콘텐츠를 가장 빠르게 제공하는 플랫폼’이라는 브랜드를 구축하기 위해 론칭부터 ‘OTT 퍼스트’ 전략을 내세워 잠재된 중화권 콘텐츠 팬심을 공략했다. 모아의 모기업은 AsiaN, AsiaUHD, AsiaM, A+Drama 등 4개 TV 채널을 운영하는 TV 기반 콘텐츠 사업자이다. 그럼에도 불구하고 ‘MOA First’에서 선공개·최초 공개하고, ‘MOA Fast Track’에서 현지 동시 방영 콘텐츠를 제공하며, ‘MOA Exclusive’에서 플랫폼 단독 콘텐츠를 제공함으로써 글로벌 OTT 사업자와의 차별화를 꾀하는 데 성공했다.<sup>5)</sup></p>
+              </div>
+
+              <div class="paragraph bullet-row bullet-row-gap-top">
+                <p>⦁</p>
+                <p><span class="text-brand-bold">팬덤 네트워크로 경쟁력 강화</span>: 모아의 가장 큰 자산은 중드의 열성 팬이라고 할 수 있다. 중드 팬들이 집결하여 참여하고 소통하는 ‘복합 경험’ 공간으로 확장하는 것을 궁극적인 목표로 하고 있다. 이를 위해 앱 내에서 실시간 채널과 채팅 기능을 운영함으로써 단순 VOD 시청이 아니라 팬들이 함께 반응하고 감상을 나누는 구조를 지향하고 있다. 실제로 2026년부터 이용자의 콘텐츠 시청 경험을 서비스 운영에 직접 반영하는 ‘참여형 큐레이션’ 강화에 나섰다.<sup>6)</sup></p>
+              </div>
+            </div>
+
+            <div>
+              <p class="sub-heading">'플랫폼'에서 취향의 '성지'로 전환</p>
+              <p class="paragraph">
+                라프텔, 헤븐리, 그리고 모아의 사례는 중소 OTT의 생존 공식이 규모의 경제가 아닌 '정서적 밀도'에 있음을 시사한다. 이들은 단순히 영상을 스트리밍하는 도구를 넘어 해당 하위문화를 지탱하는 아카이브이자 팬들이 모여드는 커뮤니티로 기능한다. 대형 플랫폼의 알고리즘이 예측하는 취향은 흔히 통계적 수치에 머물지만, 이들 버티컬 플랫폼이 제공하는 경험은 사용자의 정체성과 맞닿아 있다. 한 번 형성된 성지에 대한 소속감은 웬만한 가격 경쟁력이나 물량 공세보다 강력한 잠금 효과(Lock-in effect)를 발휘한다. 이러한 국내의 전략적 성과는 '로컬리티'와 '마이크로 취향'을 무기로 글로벌 공룡들과의 공존을 모색하는 아시아 각국의 로컬 플랫폼들에게 중요한 함의를 제공한다.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section 3 -->
+        <section class="section-block">
+          <div class="subtitle-wrap">
+            <div class="subtitle-bar-desktop"></div>
+
+            <div class="subtitle-inner">
+              <div class="subtitle-bar-mobile"></div>
+              <div class="subtitle-text">아시아 로컬 OTT의 생존 방정식</div>
+            </div>
+          </div>
+
+          <div class="section-body">
+            <p class="paragraph">
+              글로벌 OTT가 자본과 알고리즘으로 대중 시장을 장악하는 동안 아시아의 로컬 플랫폼들은 저마다의 방식으로 거대 플랫폼이 채우지 못하는 빈자리를 파고들었다. 문화적 근접성을 무기로 삼은 플랫폼, 디아스포라를 하나로 묶은 플랫폼, 그리고 장르를 국가 산업으로 격상시킨 플랫폼까지 전략은 서로 다르지만, 공통적으로 깊은 문화적 이해를 경쟁력의 원천으로 삼는다는 점에서 맥을 같이한다.
+            </p>
+
+            <div>
+              <p class="sub-heading">1) Viu: K-콘텐츠를 매개로 한 '문화적 매개자'의 입지</p>
+              <p class="paragraph">
+                홍콩 PCCW 그룹이 운영하는 Viu는 글로벌 OTT가 서구권 중심의 오리지널 대작에 집중할 때, 아시아인들의 정서적 공감대가 높은 K-콘텐츠를 최우선 전략 자산으로 삼았다. 이는 단순한 콘텐츠 구매를 넘어 아시아적 가치관과 감수성을 공유하는 '문화적 매개자'로서의 입지를 다지는 과정으로 작용했다.<sup>7)</sup><br><br>
+              </p>
+
+              <div class="paragraph bullet-row">
+                <p>⦁</p>
+                <p><span class="text-brand-bold">전략적 유연성과 속도전</span>: Viu는 한국 드라마 방영 직후 수 시간 내에 현지어 자막을 제공하는 압도적인 속도전으로 불법 스트리밍 수요를 합법적 테두리 안으로 빠르게 흡수했다. 최근에는 K-콘텐츠의 검증된 문법을 현지 정서와 결합한 'Viu Original' 제작에 박차를 가하고 있는데, K-콘텐츠의 서사 구조를 동남아 현지 맥락으로 재해석하는 역량은 서구권 알고리즘이 도달할 수 없는 로컬 플랫폼만의 독보적인 깊이를 보여준다.<sup>8)</sup></p>
+              </div>
+
+              <div class="paragraph bullet-row bullet-row-gap-top">
+                <p>⦁</p>
+                <p><span class="text-brand-bold">성과</span>: Viu의 유료 구독자 수는 2022년 1,220만 명에서 2025년 말 1,680만 명으로 꾸준히 성장했으며, 태국, 인도네시아, 말레이시아에서 특히 높은 성과를 기록했다. 구독 수익과 광고 수익이 동반 성장하는 안정적인 수익 구조를 바탕으로 Viu는 아시아 콘텐츠 생태계의 실질적인 허브로 자리매김했다.<sup>9)</sup></p>
+              </div>
+            </div>
+
+            <div>
+              <p class="sub-heading">2) VieON: 디지털 문화 주권의 확립</p>
+              <p class="paragraph">
+                베트남의 로컬 OTT 선두 주자인 VieON은 국가적 정체성과 첨단 기술을 결합하여 자국 시장을 방어하는 동시에 글로벌 시장으로 그 영향력을 확장하고 있다. 거대 자본에 맞서는 로컬 미디어의 '디지털 문화 주권' 확립이라는 측면에서 주목할 만한 사례다.<br><br>
+              </p>
+
+              <div class="paragraph bullet-row">
+                <p>⦁</p>
+                <p><span class="text-brand-bold">로컬리티의 집약과 기술적 내재화</span>: VieON은 베트남 고유의 정서가 짙은 로컬 콘텐츠와 독점 라이브러리를 전면에 내세우는 한편, AI와 빅데이터를 활용한 정교한 개인화 추천 시스템을 구축했다. 특히 국제 표준 DRM 시스템 도입으로 저작권 보호를 강화해 불법 스트리밍이 만연한 현지 시장에서 '신뢰할 수 있는 유료 플랫폼'이라는 브랜딩에 성공했다.<sup>10)</sup> 베트남 현지 앱마켓 엔터테인먼트 부문 선두를 유지하며 베트남 내 최대 OTT 플랫폼으로 자리매김했다.</p>
+              </div>
+
+              <div class="paragraph bullet-row bullet-row-gap-top">
+                <p>⦁</p>
+                <p><span class="text-brand-bold"> 글로벌 디아스포라와 O2O 전략</span>: VieON의 비전은 내수 시장에 머물지 않는다. 2024년 론칭한 'VieON Global'은 전 세계 130개국에 퍼져 있는 600만 베트남 디아스포라를 타깃으로, 해외에서도 고향의 문화를 실시간으로 향유할 수 있는 가교 역할을 자처한다.<sup>11)</sup> 온라인 경험을 오프라인으로 잇는 'VieON All-Star Championship' 같은 이벤트 또한 플랫폼을 향한 팬덤의 충성도를 더욱 공고히 한다. 로컬 OTT가 글로벌 공룡 기업들과 공존할 수 있는 가장 강력한 무기가 단순한 영상 송출을 넘어선 '문화적 공동체 형성'에 있음을 보여주는 대목이다.</p>
+              </div>
+            </div>
+
+            <div>
+              <p class="sub-heading">3) 태국 BL 미디어 생태계: 장르를 국가 산업으로</p>
+              <p class="paragraph">
+                ‘장르가 산업이 될 수 있는가’란 질문에 가장 명확한 답을 보여주는 사례가 태국의 BL(Boys Love) 미디어 생태계다. 한때 비주류로 분류되던 BL은 이제 태국 정부가 공식적으로 육성하는 국가 소프트파워 자산이 되었으며, 그 중심에는 콘텐츠를 넘어선 '팬덤 경제'의 정교한 설계가 있다.<br><br>
+              </p>
+
+              <div class="bullet-list-stack">
+                <div class="paragraph bullet-row">
+                  <p>⦁</p>
+                  <p><span class="text-brand-bold">팬덤 경제의 구조적 완성도</span>: GMMTV로 대표되는 현지 제작사들은 콘텐츠와 팬덤 비즈니스를 하나의 유기적인 생태계로 설계했다. 배우를 아이돌로 육성하는 전략이 그 핵심으로 업계 관계자는 "오늘날 배우 캐스팅은 연기력만의 문제가 아니다. 처음부터 아이돌로서의 잠재력을 고려해 가능한 한 멀리까지 함께 성장시켜 나가야 한다"고 설명한다.<sup>12)</sup> 드라마 종영 이후에도 콘서트·팬미팅·굿즈 판매로 이어지는 수익 구조 속에서 팬들은 단순한 시청자가 아니라 아이돌의 성장에 감정적·경제적으로 투자하는 참여자가 된다.</p>
+                </div>
+                <div class="paragraph bullet-row">
+                  <p>⦁</p>
+                  <p><span class="text-brand-bold">수치로 증명된 파급력</span>: 이미 2021년에 태국 상무부 산하 국제무역진흥부(DITP)가 주최한 온라인 비즈니스 매칭 행사에서는 단 한 차례 행사만으로 약 3억 6천만 바트(한화 약 140억 원)의 거래가 성사된 바 있으며, 당시 일본, 대만, 베트남 등이 주요 구매국으로 참여했다.<sup>13)</sup> SCB EIC(Siam Commercial Bank's Economic Intelligence Center)의 분석에 따르면 BL 시리즈 시장의 태국 엔터테인먼트 미디어 생산 가치 내 비중은 2019년 0.7%에서 2025년 3.9%로 성장했으며, 연평균 17%의 성장률로 총 시장 규모가 49억 바트(약 1,900억 원)를 넘어설 것으로 전망된다.<sup>14)</sup></p>
+                </div>
+                <div class="paragraph bullet-row">
+                  <p>⦁</p>
+                  <p><span class="text-brand-bold">정부 소프트파워 정책과의 결합</span>: 태국 외교부(MFA)는 2021년 3월을 기점으로 BL 산업을 공식적인 소프트파워 외교 자산으로 채택했다.<sup>15)</sup> 전통 무예나 음식 등 고전적 문화 자산에 의존하던 기존 전략에서 탈피해 대중문화 콘텐츠를 국가 브랜드 자산으로 삼은 중요한 전환점이었다. 이후 소프트파워 위원회 산하 12개 분과위원회가 구성되었고, BL 배우와 작품은 남미 등 원거리 지역 이벤트에까지 파견되며 지구적 팬덤 확장을 도모하고 있다.</p>
+                </div>
+                <div class="paragraph bullet-row">
+                  <p>⦁</p>
+                  <p><span class="text-brand-bold">범아시아 플랫폼과의 연동</span>: 태국 BL 콘텐츠의 성장은 자국 플랫폼에만 국한되지 않는다. WeTV는 태국 BL 시리즈 호황에 힘입어 2024년 이용자 수가 전년 대비 14% 이상 증가했으며, 대만의 GagaOOLala 역시 같은 기간 이용자가 33% 성장했다.<sup>16)</sup> 태국 BL은 로컬 플랫폼의 구독자를 끌어들이는 '마그넷 콘텐츠'로 기능하는 가운데 글로벌 공룡에 맞설 킬러 콘텐츠를 확보하는 가장 효율적인 경로 중 하나임을 증명하고 있다.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section 4 -->
+        <section class="section-block">
+          <div class="subtitle-wrap">
+            <div class="subtitle-bar-desktop"></div>
+
+            <div class="subtitle-inner">
+              <div class="subtitle-bar-mobile"></div>
+              <div class="subtitle-text">글로벌의 빈자리가 로컬의 거점이 되다</div>
+            </div>
+          </div>
+
+          <div class="section-body">
+            <p class="paragraph">
+              지금까지 살펴본 사례들은 하나의 공통된 교훈을 남긴다. 글로벌 공룡과의 싸움에서 로컬 중소 플랫폼의 무기는 자본의 규모가 아니라 문화에 대한 '깊이'라는 것이다. Viu는 K-콘텐츠를 단순히 중개하는 데 그치지 않고 아시아적 감수성을 재해석하는 '문화적 매개자'로 자리매김했고, VieON은 베트남어와 베트남 정서를 플랫폼의 정체성으로 삼아 내수 시장을 지키는 동시에 전 세계 디아스포라를 하나의 커뮤니티로 결속시켰다. 또한 태국 BL 생태계는 비주류 장르를 국가 소프트파워 자산으로 전환하면서 콘텐츠-아이돌-팬덤 경제를 하나의 선순환 구조로 설계했다. 이들의 생존 방정식은 결국 같은 곳을 향한다. 글로벌 알고리즘이 번역하지 못하는 문화적 결을 플랫폼의 정체성으로 삼는 것, 그리고 시청자를 소비자가 아닌 커뮤니티의 구성원으로 대우하는 것이다.<br><br>
+              
+              이러한 흐름은 국내 콘텐츠 사업자들에게 두 가지 시사점을 제공한다. 첫째, 해외 진출 전략의 다변화가 필요하다는 점이다. 글로벌 대형 OTT에 콘텐츠를 납품하는 '단일 통로' 전략에 과도하게 의존하는 것은 협상력 약화와 수익 구조의 취약성을 초래할 수 있다. Viu, VieON, WeTV, GagaOOLala 등 동아시아 각국의 유력 로컬 플랫폼들은 이미 검증된 유통망이자 현지 팬덤과의 접점이다. 이들과의 직접 제휴를 병행하는 다변화 전략이 중장기적으로 더 안정적인 수익 기반을 만들어줄 것이다.<br><br>
+              
+              둘째, IP 기획 단계부터 팬덤 경제와의 연동을 고려해야 한다. 태국 BL 생태계가 보여주듯, 오늘날 콘텐츠의 수익은 스트리밍 구독료에 그치지 않는다. 굿즈, 팬미팅, 현지 이벤트, 배우의 브랜드 앰배서더 활동으로 이어지는 IP 확장성을 콘텐츠 개발 초기부터 설계에 포함할 때, 지속 가능한 팬덤 자산을 구축할 수 있다.<br><br>
+              
+              글로벌 OTT의 시대는 로컬 플랫폼의 종말을 예고하는 것처럼 보였다. 그러나 획일화된 알고리즘이 채우지 못하는 빈자리는 오히려 로컬 플랫폼의 가장 단단한 거점이 되었다. 깊이로 영토를 지키고, 커뮤니티로 팬덤을 결속시키는 것이 아시아 로컬 OTT가 실제 증명하고 있는 공존의 기술인 셈이다.
+            </p>
+          </div>
+        </section>
+
+        <!-- Author Profile -->
+        <div class="author-profile">
+          <img src="./img/manuscript6/profile.jpg" alt="강보라" class="author-img" />
+          <div class="author-info">
+            <p class="author-name">
+              강보라
+              <br class="mobile-br" />
+              <span class="author-affiliation">(연세대학교 커뮤니케이션연구소 전문연구원)</span>
+            </p>
+            <p class="author-description">
+              연세대학교 커뮤니케이션연구소 전문연구원으로 방송영상, 문화기술, 문화연구를 아우르는 다학제적 배경 위에서 미디어문화와 일상적 실천을 탐구한다. 영상 미디어 분야의 다양한 문화현상 안에 숨겨진 집단적 감정 구조와 사회적 상상력에 관심을 가지고 있다. 최근에는 '누가 &lt;폭싹 속았수다&gt;를 보았는가: 숏폼 콘텐츠의 부상과 드라마 수용 문화의 변용'(2026), 『수집된 미래: MMCA 뉴미디어 컬렉션』(2025, 공저), 《한편-한국》(2025, 공저) 등을 저술했다.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Post Navigator -->
+      <div class="post-navigator">
+        <a href="./trend_2.html" class="post-nav prev">
+          <div class="post-nav-header">
+            <img src="./img/assets/arrow.png" alt="화살표" class="arrow" />
+            <p>이전 글</p>
+          </div>
+          <span class="post-nav-title">글로벌 스트리밍 사업자의 라이브 중계 전략 <br>: 레거시 미디어는 무엇을 오해하고 있나</span>
+        </a>
+
+        <div class="post-nav-div"></div>
+
+        <div class="last-nav"></div>
+      </div>
+    </div>
+
+    <!-- Anchor Button -->
+    <div id="anchor-button" class="anchor-button">
+      <button
+        type="button"
+        id="note-open-btn"
+        class="anchor-button-inner anchor-note-button"
+        aria-label="주석 열기"
+      >
+        주석
+      </button>
+
+      <button class="anchor-button-inner" onclick="scrollToTop()">
+        <img src="./img/assets/TopArrow.png" alt="Top Button" />
+      </button>
+
+      <button class="anchor-button-inner" onclick="scrollToBottom()">
+        <img src="./img/assets/BottomArrow.png" alt="Bottom Button" />
+      </button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+
+      <!-- 상단: 로고와 설명 -->
+      <div class="footer-top-wrap">
+        <div class="footer-top">
+
+          <div class="footer-logo-wrap">
+            <img src="./img/assets/kocca-logo-white.png" alt="한국콘텐츠진흥원 로고" class="footer-logo" />
+
+            <p class="footer-description">
+              &lt;방송영상·OTT 트렌드&gt;에 실린 글과 사진은 한국콘텐츠진흥원의 허가 없이 사용할 수 없으며,
+              <br class="footer-hidden" />
+              본지의 내용은 필자 개인의 의견으로 한국콘텐츠진흥원의 공식 견해가 아닙니다.
+            </p>
+          </div>
+
+          <!-- 발행 정보 -->
+          <div class="footer-info">
+            <div class="footer-info-group">
+              <div>
+                <p>발행인</p>
+                <p>유현석(한국콘텐츠진흥원 원장직무대행)</p>
+              </div>
+              <div>
+                <p>발행일</p>
+                <p>2026년 5월 28일</p>
+              </div>
+              <div>
+                <p>발행처</p>
+                <div style="display: flex; gap:4px; flex-direction: column;">
+                  <p>한국콘텐츠진흥원 콘텐츠산업정책연구센터 산업정책팀</p>
+                  <p>전라남도 나주시 교육길 35</p>
+                  <p>T. 1566-1114 https://www.kocca.kr</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="footer-info-group">
+              <div>
+                <p>기획·편집</p>
+                <div style="display: flex; gap:4px; flex-direction: column;">
+                  <p>한국콘텐츠진흥원 콘텐츠산업정책연구센터 산업정책팀</p>
+                  <p>(주)컬쳐미디어랩</p>
+                </div>
+              </div>
+
+              <div>
+                <p>기획위원</p>
+                <div style="display: flex; gap:4px; flex-direction: column;">
+                  <p>이성민(한국방송통신대학교 미디어영상학과 부교수)</p>
+                  <p>장민지(경남대학교 미디어영상학과 조교수)</p>
+                </div>
+              </div>
+
+              <div>
+                <p>ISSN</p>
+                <div>
+                  <p>3091-6771(online)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-buttons">
+          <a href="./download/2026_방송영상&OTT트렌드_Vol1_PDF_최종본.pdf" class="footer-button-outline"
+            download="2026_방송영상&OTT트렌드_Vol1_PDF">2026 Vol.2 (7월호) PDF 다운받기</a>
+          <a href="https://www.kocca.kr/kocca/common/Mailling.do?menuNo=204918" target="_blank"
+            class="footer-button-filled">구독 신청하기</a>
+        </div>
+      </div>
+
+
+      <div class="footer-bottom">
+        <p>© 2026 Korea Creative Content Agency. All rights reserved.</p>
+        <img src="./img/assets/new_img_opentype04.png" alt="공공누리 제4유형 : 출처표시 + 상업적 이용금지 + 변경금지" />
+      </div>
+    </div>
+  </footer>
+
+  <!-- 주석 -->
+  <div id="note-sheet" aria-hidden="true" class="note-sheet note-sheet-hidden">
+    <!-- dim -->
+    <div id="note-sheet-dim" class="note-sheet-dim"></div>
+
+    <!-- bottom sheet -->
+    <div id="note-sheet-panel"
+      class="note-sheet-panel"
+      role="dialog" aria-modal="true" aria-labelledby="note-sheet-title">
+      <div class="note-sheet-handle"></div>
+
+      <div class="note-sheet-header">
+        <h2 id="note-sheet-title" class="note-sheet-title">
+          주석
+        </h2>
+        <button type="button" id="note-close-btn" class="note-sheet-close" aria-label="주석 닫기">
+          닫기
+        </button>
+      </div>
+
+      <div class="note-sheet-body">
+        <ol class="note-list">
+          <li>
+            <a href="http://www.pdjournal.com/news/articleView.html?idxno=81223" target="_blank" rel="noopener noreferrer">
+              방연주(2026.5.4). <span class="bodyQuotes">"</span>애니메이션 팬들이 만든 플랫폼, 라프텔의 성장 비결<span class="bodyQuotes">"</span>. 《PD저널》.
+            </a>
+          </li>
+
+          <li>
+            <a href="https://dbr.donga.com/article/view/1901/article_no/11203" target="_blank" rel="noopener noreferrer">
+              백상경(2024.3). <span class="bodyQuotes">"</span>불법 시장 양지로... 라프텔이 바꾼 애니 소비 지형<span class="bodyQuotes">"</span>. 《동아비즈니스리뷰(DBR)》.
+            </a>
+          </li>
+
+          <li>
+            <a href="https://heavenly.tv/blog/125" target="_blank" rel="noopener noreferrer">
+              헤븐리 블로그(2023.10.25). 두근두근! 기대되는 헤븐리 팬미팅 콘텐츠 3가지.
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.topstarnews.net/news/articleView.html?idxno=15867052" target="_blank" rel="noopener noreferrer">
+              강도윤(2025.11.7). <span class="bodyQuotes">“</span>글로벌 OTT 정상 등극<span class="bodyQuotes">”</span>…<span class="bodyQuotes">‘</span>복숭아 꽃이 피었습니다<span class="bodyQuotes">’</span>, 헤븐리 첫 BL 오리지널→팬덤 폭발. 《탑스타뉴스》.
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.econovill.com/news/articleView.html?idxno=720715" target="_blank" rel="noopener noreferrer">
+              김형호(2025.12.5). 중드 OTT MOA, 3년 내공을 쌓다 ∙∙∙ 안해조 대표 <span class="bodyQuotes">“</span>다음은 팬덤 연결<span class="bodyQuotes">”</span> [ER인터뷰]. 《이코노믹 리뷰》.
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.enewstoday.co.kr/news/articleView.html?idxno=2422474" target="_blank" rel="noopener noreferrer">
+              백연식(2026.4.23). <span class="bodyQuotes">“</span>인생 중드 추천하고 아이패드 받자<span class="bodyQuotes">”</span>···모아, 참여형 이벤트 유저 공략. 《이뉴스투데이》.
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.dailian.co.kr/news/view/1638713/" target="_blank" rel="noopener noreferrer">
+              류지윤(2026.5.1). K-콘텐츠 7300억 투자…글로벌 독립 전략, 어디까지 왔나 [넷플릭스 없이, 통할까③]. 《데일리안》.
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.newsis.com/view/NISX20231116_0002524358" target="_blank" rel="noopener noreferrer">
+              윤정민(2023.11.16). <span class="bodyQuotes">"</span>홍콩 OTT <span class="bodyQuotes">'</span>뷰<span class="bodyQuotes">'</span> 동남아 시장 1위 비결은 K-드라마<span class="bodyQuotes">"</span>. 《뉴시스》.
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.pcrd.com/public/uploads/keys/10_2_2026_Announcement_PCCW_Limited_-_Annual_Results_2025.pdf" target="_blank" rel="noopener noreferrer">
+              PCCW(2026). Annual Results 2025.
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.vietnam.vn/en/vieon-tham-vong-ket-noi-nguoi-viet-toan-cau-tu-trai-nghiem-van-hoa-dac-sac" target="_blank" rel="noopener noreferrer">
+              Hà Nội Mới(2025.8.13). VieON - an ambitious project to connect Vietnamese people globally through unique cultural experiences. Vietnam.vn.
+            </a>
+          </li>
+
+          <li>
+            Hà Nội Mới(2025.8.13). Ibid.
+          </li>
+
+          <li>
+            <a href="https://www.bangkokpost.com/thailand/pr/3093509/how-thai-boys-love-series-sparked-a-billion-baht-fan-economy-and-soft-power-revolution#google_vignette" target="_blank" rel="noopener noreferrer">
+              Bangkok Post(2025.8.26). How Thai Boys’ Love series sparked a billion-baht fan economy and soft power revolution.
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.bangkokpost.com/opinion/opinion/2215467/support-boys-love-and-expand-our-soft-power" target="_blank" rel="noopener noreferrer">
+              Bangkok Post(2021.11.15). Support Boy's Love and expand our soft power.
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.nationthailand.com/blogs/life/entertainment/40045102" target="_blank" rel="noopener noreferrer">
+              The Nation Thailand(2025.1.12). Thai BL series growth expected to generate over 4.9 billion baht.
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.frontiersin.org/journals/communication/articles/10.3389/fcomm.2026.1758167/full" target="_blank" rel="noopener noreferrer">
+              Bunyavejchewin, P. (2026). Thai boys love series and idols: a new facet of soft power diplomacy in Thailand. Frontiers in Communication.
+            </a>
+          </li>
+
+          <li>
+            <a href="https://en.moneyandbanking.co.th/2025/149568/" target="_blank" rel="noopener noreferrer">
+              Money &amp; Banking Online(2025). Thailand becomes the world's market leader for <span class="bodyQuotes">"</span>Y-series<span class="bodyQuotes">"</span>, expected to generate over 4,900 billion baht in revenue in 2025.
+            </a>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+
+  <script src="./js/utils.js"></script>
+  <script src="./js/menu.js"></script>
+</body>
+
+</html>

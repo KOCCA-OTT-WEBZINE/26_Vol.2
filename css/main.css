@@ -123,36 +123,81 @@ div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a
   transform: scaleX(1);
 }
 
-.vol-info {
+.header-vol-info {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
   background: linear-gradient(
     135deg,
     #1F5FA8 0%,
     #4F0368 50%,
     #4C2929 100%
   );
+
   color: white;
-  padding: 8px 16px;
+  padding: 8px 20px 8px 16px;
   border-radius: 999px;
   font-weight: 700;
   font-size: var(--text-lg);
+
+  cursor: pointer;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    filter 0.25s ease;
+
+  font-family: inherit;
 }
 
-.hamburger {
-  display: none;
+.header-vol-info > span,
+.header-vol-info .hamburger {
+  position: relative;
+  z-index: 1;
+}
+
+.header-vol-info .hamburger {
+  display: flex;
   flex-direction: column;
+  align-items: flex-end;
   justify-content: space-between;
-  width: 28px;
-  height: 20px;
+
+  width: 22px;
+  height: 16px;
+  padding: 0;
+
   background: none;
   border: none;
   cursor: pointer;
 }
 
-.hamburger span {
+.header-vol-info .hamburger span {
   display: block;
   height: 2px;
   width: 100%;
+
   background-color: white;
+  border-radius: 999px;
+
+  transition:
+    width 0.25s ease,
+    opacity 0.25s ease,
+    transform 0.25s ease;
+}
+
+.header-vol-info:hover .hamburger span:nth-child(1) {
+  width: 75%;
+}
+
+.header-vol-info:hover .hamburger span:nth-child(2) {
+  width: 100%;
+}
+
+.header-vol-info:hover .hamburger span:nth-child(3) {
+  width: 60%;
 }
 
 @media (max-width: 1440px) {
@@ -163,12 +208,7 @@ div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a
 }
 
 @media (max-width: 1280px) {
-  .hamburger {
-    display: flex;
-  }
-
-  .nav-right .nav,
-  .nav-right > .vol-info {
+  .nav-right .nav {
     display: none;
   }
 }

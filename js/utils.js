@@ -21,29 +21,43 @@ function updateProgressBar() {
 window.addEventListener("scroll", updateProgressBar);
 
 // anchorButton
-function handleAnchorButtonVisibility() {
-  const scrollY = window.scrollY || window.pageYOffset;
-  const windowHeight = window.innerHeight;
-  const documentHeight = document.documentElement.scrollHeight;
-  const distanceToBottom = documentHeight - (scrollY + windowHeight);
-
-  const anchorButton = document.getElementById("anchor-button");
-  if (scrollY > 200 && distanceToBottom > 200) {
-    anchorButton?.classList.add("show");
-  } else {
-    anchorButton?.classList.remove("show");
-  }
-}
+const pageTopBtn = document.querySelector(".page-top-btn");
+let scrollHideTimer = null;
 
 function scrollToTop() {
-  window.scrollTo({ top: 0, behavior: "smooth" });
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
 }
 
-function scrollToBottom() {
-  window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
+function showTopButtonWhileScrolling() {
+  if (!pageTopBtn) return;
+
+  const scrollY = window.scrollY || document.documentElement.scrollTop;
+
+  // 최상단 근처에서는 노출하지 않음
+  if (scrollY <= 100) {
+    pageTopBtn.classList.remove("is-visible");
+    return;
+  }
+
+  // 스크롤 발생 시 노출
+  pageTopBtn.classList.add("is-visible");
+
+  // 기존 타이머 초기화
+  clearTimeout(scrollHideTimer);
+
+  // 스크롤이 멈춘 뒤 1초 후 숨김
+  scrollHideTimer = setTimeout(() => {
+    pageTopBtn.classList.remove("is-visible");
+  }, 1000);
 }
 
-window.addEventListener("scroll", handleAnchorButtonVisibility);
+window.addEventListener("scroll", showTopButtonWhileScrolling, { passive: true });
+window.addEventListener("load", () => {
+  pageTopBtn?.classList.remove("is-visible");
+});
 
 // 주석 바텀시트
 document.addEventListener("DOMContentLoaded", function () {

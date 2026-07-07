@@ -138,7 +138,7 @@ div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a
   );
 
   color: white;
-  padding: 8px 20px 8px 16px;
+  padding: 12px 20px 12px 16px;
   border-radius: 999px;
   font-weight: 700;
   font-size: var(--text-lg);
@@ -200,6 +200,8 @@ div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a
   width: 60%;
 }
 
+/* Mobile 웹진 호 정보 */
+
 @media (max-width: 1440px) {
   .logo-wrap,
   .logo {
@@ -223,9 +225,16 @@ div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a
     height: 32px;
   }
 
-  .nav-right .nav {
+  .nav-right .nav,
+  .vol-text {
     display: none;
   }
+
+  .header-vol-info {
+    background: transparent;
+    padding: 0;
+  }
+  
 }
 
 @media (max-width: 640px) {
@@ -1560,3 +1569,4 @@ div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a
     max-width: none;
   }
 }
+

@@ -43,11 +43,15 @@
           <a href="./index.html#data-point" class="nav-item">데이터 포인트</a>
         </div>
 
-        <button type="button" id="menu-toggle" class="hamburger">
-          <span></span><span></span><span></span>
-        </button>
+        <button type="button" id="menu-toggle" class="header-vol-info" aria-label="메뉴 열기">
+          <span class="vol-text">2026 Vol.2 (7월호)</span>
 
-        <div class="vol-info">2026 Vol.2 (7월호)</div>
+          <span class="hamburger" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </button>
       </div>
     </div>
 
@@ -227,26 +231,6 @@
         </a>
       </div>
     </div>
-
-    <!-- Anchor Button -->
-    <div id="anchor-button" class="anchor-button">
-      <button
-        type="button"
-        id="note-open-btn"
-        class="anchor-button-inner anchor-note-button"
-        aria-label="주석 열기"
-      >
-        주석
-      </button>
-
-      <button class="anchor-button-inner" onclick="scrollToTop()">
-        <img src="./img/assets/TopArrow.png" alt="Top Button" />
-      </button>
-
-      <button class="anchor-button-inner" onclick="scrollToBottom()">
-        <img src="./img/assets/BottomArrow.png" alt="Bottom Button" />
-      </button>
-    </div>
   </div>
 
   <!-- Footer -->
@@ -330,117 +314,28 @@
     </div>
   </footer>
 
-  <!-- 주석 -->
-  <div id="note-sheet" aria-hidden="true" class="note-sheet note-sheet-hidden">
-    <!-- dim -->
-    <div id="note-sheet-dim" class="note-sheet-dim"></div>
+  <!-- TOP 버튼 -->
+  <button button type="button" class="page-top-btn" onclick="scrollToTop()" aria-label="상단으로 이동">
+    <img src="./img/assets/TopArrow.png" alt="Top Button" />
+  </button>
 
-    <!-- bottom sheet -->
-    <div id="note-sheet-panel"
-      class="note-sheet-panel"
-      role="dialog" aria-modal="true" aria-labelledby="note-sheet-title">
-      <div class="note-sheet-handle"></div>
+  <!-- 하단 플로팅 바 -->
+  <nav class="article-floating-nav" aria-label="게시글 이동">
+    <a href="#" class="floating-nav-btn prev">
+      <img src="./img/assets/arrow.png" alt="" width="24" height="24">
+      <span>이전글</span>
+    </a>
 
-      <div class="note-sheet-header">
-        <h2 id="note-sheet-title" class="note-sheet-title">
-          주석
-        </h2>
-        <button type="button" id="note-close-btn" class="note-sheet-close" aria-label="주석 닫기">
-          닫기
-        </button>
-      </div>
-
-      <div class="note-sheet-body">
-        <ol class="note-list">
-          <li>
-            알렉스 코녹(2025). &lt;미디어 경영과 AI 1> (이청기, 역). 한울.
-          </li>
-
-          <li>
-            한국콘텐츠진흥원(2025). &lt;2025년 2분기 콘텐츠산업 동향분석>.
-          </li>
-
-          <li>
-            <a href="https://blog.naver.com/kpfjra_/224039348683" target="_blank" rel="noopener noreferrer">
-              민성원(2025). [EBS 〈뤼순에서〉 제작기] 100% AI로 되살린 안중근: 거부감 줄인 지식 교양 콘텐츠가 되기 위해. <신문과 방송>.
-            </a>
-          </li>
-
-          <li>
-            <a href="https://www.forbes.com/" target="_blank" rel="noopener noreferrer">
-              Forbes(2025.12.7). Non-player combat: The AI reality show where the cast doesn't know they're fake.
-            </a>
-          </li>
-
-          <li>
-            <a href="https://www.huffingtonpost.kr/article/256184" target="_blank" rel="noopener noreferrer">
-              김나영(2026.3.29). 공영방송도 이제 <span class="bodyQuotes">'</span>100% AI 생성 영상물<span class="bodyQuotes">'</span> 방송한다. 《허프포스트코리아》.
-            </a>
-          </li>
-
-          <li>
-            <a href="https://www.yna.co.kr/view/AKR20250527144800002" target="_blank" rel="noopener noreferrer">
-              신호경(2025.5.27). 클릭 몇 번에 AI가 영상 <span class="bodyQuotes">'</span>뚝딱<span class="bodyQuotes">'</span>… 연합인포맥스 인포X 출시. 《연합뉴스》.
-            </a>
-          </li>
-
-          <li>
-            <a href="https://news.sbs.co.kr/news/endPage.do?news_id=N1008487979" target="_blank" rel="noopener noreferrer">
-              강선애(2026.3.22). SBS, AI 본격 적용한 첫 리얼리티 프로그램 제작… <span class="bodyQuotes">'</span>스브스 AI<span class="bodyQuotes">'</span> 브랜드도 공개. 《SBS NEWS》.
-            </a>
-          </li>
-
-          <li>
-            방송과기술(2025.10.15). [인터뷰] 제52회 한국방송대상 방송기술상 최성우 KBS 수석연구원.
-          </li>
-
-          <li>
-            <a href="https://www.forbes.com/sites/charliefink/2025/07/30/amazon-backs-showrunners-ai-streaming-platform/" target="_blank" rel="noopener noreferrer">
-              Fink, C. (2025.7.30). Amazon-backed Showrunner AI streaming platform lets users create TV episodes.
-            </a>
-          </li>
-
-          <li>
-            <a href="https://www.khan.co.kr/article/202603291643001" target="_blank" rel="noopener noreferrer">
-              김송이(2026.3.29). AI 전면 활용 시도하는 EBS··· 공영방송 역할·파급력 검증 충분한가. 《경향신문》.
-            </a>
-          </li>
-
-          <li>
-            <a href="https://www.khan.co.kr/article/202601130600071" target="_blank" rel="noopener noreferrer">
-              김상범(2026.1.13). AI가 만든 드라마가 차트 1위를?… 중국 센스타임의 비결. 《경향신문》.
-            </a>
-          </li>
-
-          <li>
-            AI타임스(2026.5.8). <span class="bodyQuotes">"</span>분당 제작비 30달러<span class="bodyQuotes">"</span>... 하루 500편씩 쏟아내는 중국의 AI 드라마 공장.
-          </li>
-
-          <li>
-            유진희(2026). AI 시대의 콘텐츠 기획력. In 한국언론학회(편), AI와 미디어: 미디어로서의 인공지능과 커뮤니케이션의 재구성 (pp. 46–76). 모시는 사람들.
-          </li>
-
-          <li>
-            한상열(2025.8.19). 메타버스-AI 공진화 전망과 시사점. 소프트웨어정책연구소.
-          </li>
-
-          <li>
-            <a href="https://eiec.kdi.re.kr/publish/columnView.do?sel_year=2026&sel_month=05" target="_blank" rel="noopener noreferrer">
-              김덕진(2026). AI 트렌드 따라잡기: '놀라움'만으로는 살아남지 못한다… 오픈AI '소라'의 퇴장이 알려주는 것. 《나라경제》.
-            </a>
-          </li>
-
-          <li>
-            최광민(2026.4.28). K-콘텐츠 제작사 67%, 쏟아지는 영상 AI에 피로감… <span class="bodyQuotes">"</span>개별 툴 구독 대신 <span class="bodyQuotes">'</span>AI 플랫폼<span class="bodyQuotes">'</span> 선호<span class="bodyQuotes">"</span>. 《AI타임즈》.
-          </li>
-
-          <li>
-            최민(2026). AI는 콘텐츠를 어떻게 바꾸는가. In 한국언론학회(편), AI와 미디어: 미디어로서의 인공지능과 커뮤니케이션의 재구성 (pp. 80–113). 모시는 사람들.
-          </li>
-        </ol>
-      </div>
+    <div class="floating-issue-info">
+      <span class="issue-label">2026 Vol.2 (7월호)</span>
     </div>
-  </div>
+
+    <a href="#" class="floating-nav-btn next">
+      <span>다음글</span>
+      <img class="rotate" src="./img/assets/arrow.png" alt="" width="24" height="24">
+    </a>
+  </nav>
+
 
   <script src="./js/utils.js"></script>
   <script src="./js/menu.js"></script>

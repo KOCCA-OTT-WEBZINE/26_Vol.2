@@ -1027,117 +1027,6 @@ sup {
   }
 }
 
-/* 주석 */
-.note-sheet {
-  position: fixed;
-  inset: 0;
-  z-index: 1000;
-}
-
-.note-sheet-hidden {
-  display: none;
-}
-
-.note-sheet-dim {
-  position: absolute;
-  inset: 0;
-  background-color: rgba(0, 0, 0, 0.45);
-}
-
-.note-sheet-panel {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  transform: translateY(100%);
-  border-radius: 24px 24px 0 0;
-  background-color: #fff;
-  padding: 12px 20px 24px;
-  box-shadow: 0 -8px 30px rgba(0, 0, 0, 0.16);
-  transition: transform 0.3s ease;
-}
-
-.note-sheet-handle {
-  width: 44px;
-  height: 5px;
-  margin: 0 auto 16px;
-  border-radius: 9999px;
-  background-color: #d9d9d9;
-}
-
-.note-sheet-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px;
-  margin-bottom: 16px;
-}
-
-.note-sheet-title {
-  color: #111;
-  font-size: 18px;
-  font-weight: 700;
-}
-
-.note-sheet-close {
-  color: #767676;
-  font-size: 14px;
-  font-weight: 600;
-}
-
-.note-sheet-body {
-  max-height: 65vh;
-  overflow-y: auto;
-  padding-right: 4px;
-}
-
-.note-list {
-  padding-left: 28px;
-  list-style: decimal;
-  color: #333;
-  font-size: 16px;
-  line-height: 1.6;
-  word-break: keep-all;
-}
-
-.note-list li + li {
-  margin-top: 8px;
-}
-
-.note-list a {
-  text-decoration: underline;
-  text-underline-offset: 2px;
-}
-
-@media (min-width: 768px) {
-  .note-sheet-panel {
-    right: auto;
-    bottom: 32px;
-    left: 50%;
-    width: min(720px, calc(100% - 32px));
-    transform: translateX(-50%) translateY(100%);
-    border-radius: 24px;
-  }
-
-  .note-sheet-body {
-    max-height: 60vh;
-  }
-}
-
-.note-sheet-panel.is-open {
-  transform: translateY(0);
-}
-
-.body-scroll-lock {
-  overflow: hidden;
-}
-
-@media (min-width: 768px) {
-  .note-sheet-panel.is-open {
-    transform: translateX(-50%) translateY(0);
-  }
-}
-
 /* 기타 */
 .bullet-row {
   display: flex;
@@ -1387,4 +1276,153 @@ sup {
     gap: 12px;
     padding: 24px;
   }
+}
+
+/* 하단 고정 바가 콘텐츠를 가리지 않도록 여백 확보 */
+.article-detail {
+  padding-bottom: 96px;
+}
+
+/* 하단 플로팅 바 */
+.article-floating-nav {
+  position: fixed;
+  left: 50%;
+  bottom: 0;
+  z-index: 100;
+
+  width: 100%;
+  min-height: 48px;
+  padding: 8px 40px;
+
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 8px;
+
+  transform: translateX(-50%);
+
+  background: rgba(255, 255, 255, 1);
+  border-top:1px solid rgba(32,36,40,0.1);
+  box-shadow: 0 8px 28px rgba(15, 23, 42, 0.16);
+  backdrop-filter: blur(8px);
+}
+
+@media (max-width: 768px) {
+  .article-floating-nav {
+    padding: 8px 20px;
+  }
+}
+
+/* 이전글 / 다음글 버튼 */
+.floating-nav-btn {
+  min-height: 36px;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+
+  border-radius: 999px;
+  color: #1f2937;
+  text-decoration: none;
+
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 500;
+  letter-spacing: -0.03em;
+
+  white-space: nowrap;
+}
+
+.floating-nav-btn.prev {
+  justify-content: flex-start;
+}
+
+.floating-nav-btn.next {
+  justify-content: flex-end;
+}
+
+/* 화살표 이미지 */
+.floating-nav-btn img {
+  width: 24px;
+  height: 24px;
+  display: block;
+  object-fit: contain;
+}
+
+/* 다음글 화살표 회전 */
+.floating-nav-btn img.rotate {
+  transform: rotate(180deg);
+}
+
+/* 중앙 호 정보 */
+.floating-issue-info {
+  min-width: 130px;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #767676;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.floating-issue-info .issue-label {
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 400;
+  letter-spacing: -0.03em;
+}
+
+/* TOP 버튼 - 스크롤 중에만 노출 */
+.page-top-btn {
+  position: fixed;
+  right: 20px;
+  bottom: 53px;
+  z-index: 101;
+
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid rgba(32, 36, 40, 0.08);
+  border-radius: 50%;
+  padding: 0;
+
+  background: var(--primary-500);
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.14);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  transform: translateY(-50%) translateX(8px);
+
+  cursor: pointer;
+
+  transition:
+    opacity 0.2s ease,
+    visibility 0.2s ease,
+    transform 0.2s ease;
+}
+
+.page-top-btn.is-visible {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+
+  transform: translateY(-50%) translateX(0);
+}
+
+.page-top-btn img {
+  width: 20px;
+  height: 20px;
+  display: block;
+  object-fit: contain;
 }

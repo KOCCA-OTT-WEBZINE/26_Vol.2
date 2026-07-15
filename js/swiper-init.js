@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       sectionName: "트렌드 하이라이트",
       theme: "",
-      item: "설렘은 글로벌, “유미의 세포들” 드라마, 어떻게 성공했을까?",
+      item: "올드 IP의 귀환은 무얼 말해주는 걸까: 올드 IP의 귀환을 둘러싼 콘텐츠 산업의 변화들",
       img: "./img/manuscript4/banner.jpg",
       imgMobile: "./img/manuscript4/banner-m.jpg",
       bgPosition: "center center",

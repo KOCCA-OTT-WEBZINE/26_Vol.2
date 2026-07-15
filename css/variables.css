@@ -1,12 +1,12 @@
 :root {
   /* Primary */
-  --primary-100: #eef6ff;
-  --primary-200: #d9ecff;
-  --primary-300: #a9d3ff;
-  --primary-400: #5ea6ed;
-  --primary-500: #1f5fa8;
-  --primary-600: #164b87;
-  --primary-700: #0e335f;
+  --primary-100: #FFF1EF;
+  --primary-200: #FFD9D4;
+  --primary-300: #FFBBB3;
+  --primary-400: #F8958B;
+  --primary-500: #EF6F6C;
+  --primary-600: #D95C5E;
+  --primary-700: #B34755;
 
   /* Grayscale */
   --gray-100: #f8f9fa;

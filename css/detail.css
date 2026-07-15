@@ -708,6 +708,11 @@ sup {
   text-decoration: underline;
 }
 
+#annotation .reference-items li {
+  padding-left: 1.6em;
+  text-indent: -1.6em;
+}
+
 @media (max-width: 1280px) {
   .reference-list {
     margin-top: 80px;

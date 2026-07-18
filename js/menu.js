@@ -1,11 +1,11 @@
 const spotlightItem = {
   0: {
-    title: "AI는 방송을 어떻게 바꾸고 있는가",
+    title: "커지는 숏드라마 시장, 한국의 자리는 어디인가",
     author: { name: "최민근", affiliation: "MBC 글로벌IP 제작팀 PD" },
   },
   1: {
-    title: "AI 전환 시대, 공영방송의 전략과 과제",
-    author: { name: "한성희", affiliation: "KBS 미디어연구소 미디어기술연구부장" },
+    title: "AI로 확장하는 팬덤 IP, <와이낫미디어>, 이민석 대표",
+    author: { name: "이민석", affiliation: "㈜와이낫미디어 Founder / CEO" },
   },
   2: {
     title: "AI 시대, 크리에이터는 어떻게 살아남는가 <br>: 유튜브 크리에이터 ‘고몽’의 생성형 AI 활용 전략 10문10답",
@@ -20,11 +20,11 @@ const trendItem = {
   },
   1: {
     title: "글로벌 스트리밍 사업자의 라이브 중계 전략<br>: 레거시 미디어는 무엇을 오해하고 있나",
-    author: { name: "조영신", affiliation: "미디어연구소 C&X 대표 / 동국대 대우교수" },
+    author: { name: "반옥숙", affiliation: "한국콘텐츠진흥원 산업정책팀 책임연구원" },
   },
   2: {
     title: "획일화된 알고리즘을 넘어<br>: 아시아 로컬 OTT의 틈새 전략과 공존의 기술",
-    author: { name: "강보라", affiliation: "연세대학교 커뮤니케이션연구소 전문연구원" },
+    author: { name: "이영주", affiliation: "서울과학기술대학교 IT정책전문대학원 융합미디어콘텐츠정책전공 교수" },
   },
 };
 

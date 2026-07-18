@@ -2,8 +2,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const contents = [
     {
       sectionName: "스포트라이트",
-      theme: "에이전틱 AI의 시대, 방송영상사업자의 AX 전략",
-      item: "AI는 방송을 어떻게 바꾸고 있는가",
+      theme: "숏드라마, 트렌드와 비즈니스 전략 사이에서",
+      item: "커지는 숏드라마 시장, 한국의 자리는 어디인가",
       img: "./img/manuscript1/banner.jpg",
       imgMobile: "./img/manuscript1/banner.jpg",
       bgPosition: "center center",

@@ -21,7 +21,7 @@ function updateProgressBar() {
 window.addEventListener("scroll", updateProgressBar);
 
 // anchorButton
-const pageTopBtn = document.querySelector(".page-top-btn");
+const pageAnchorButtons = document.querySelector(".page-anchor-buttons");
 let scrollHideTimer = null;
 
 function scrollToTop() {
@@ -31,32 +31,44 @@ function scrollToTop() {
   });
 }
 
-function showTopButtonWhileScrolling() {
-  if (!pageTopBtn) return;
+function scrollToBottom() {
+  window.scrollTo({
+    top: document.documentElement.scrollHeight,
+    behavior: "smooth",
+  });
+}
+
+function showAnchorButtonsWhileScrolling() {
+  if (!pageAnchorButtons) return;
 
   const scrollY = window.scrollY || document.documentElement.scrollTop;
+  const windowHeight = window.innerHeight;
+  const documentHeight = document.documentElement.scrollHeight;
 
-  // 최상단 근처에서는 노출하지 않음
-  if (scrollY <= 100) {
-    pageTopBtn.classList.remove("is-visible");
+  const isNearTop = scrollY <= 100;
+  const isNearBottom = scrollY + windowHeight >= documentHeight - 100;
+
+  // 최상단/최하단 근처에서는 버튼 숨김
+  if (isNearTop && isNearBottom) {
+    pageAnchorButtons.classList.remove("is-visible");
     return;
   }
 
   // 스크롤 발생 시 노출
-  pageTopBtn.classList.add("is-visible");
+  pageAnchorButtons.classList.add("is-visible");
 
-  // 기존 타이머 초기화
   clearTimeout(scrollHideTimer);
 
   // 스크롤이 멈춘 뒤 1초 후 숨김
   scrollHideTimer = setTimeout(() => {
-    pageTopBtn.classList.remove("is-visible");
+    pageAnchorButtons.classList.remove("is-visible");
   }, 1000);
 }
 
-window.addEventListener("scroll", showTopButtonWhileScrolling, { passive: true });
+window.addEventListener("scroll", showAnchorButtonsWhileScrolling, { passive: true });
+
 window.addEventListener("load", () => {
-  pageTopBtn?.classList.remove("is-visible");
+  pageAnchorButtons?.classList.remove("is-visible");
 });
 
 // 주석 바텀시트
@@ -111,3 +123,33 @@ const handleHeaderScroll = () => {
 
 window.addEventListener("scroll", handleHeaderScroll);
 window.addEventListener("load", handleHeaderScroll);
+
+// articleFloatingNav
+const articleFloatingNav = document.querySelector(".article-floating-nav");
+const mainContent = document.querySelector(".main-content");
+const footer = document.querySelector(".footer");
+
+function updateArticleFloatingNav() {
+  if (!articleFloatingNav || !mainContent || !footer) return;
+
+  const scrollY = window.scrollY || document.documentElement.scrollTop;
+  const windowHeight = window.innerHeight;
+
+  const mainTop = mainContent.getBoundingClientRect().top + scrollY;
+  const footerTop = footer.getBoundingClientRect().top + scrollY;
+
+  // 본문 시작 지점 근처부터 노출
+  const isAfterMainStart = scrollY > mainTop - 500;
+
+  // 푸터가 화면에 들어오기 전까지만 노출
+  const isBeforeFooter = scrollY + windowHeight < footerTop;
+
+  articleFloatingNav.classList.toggle(
+    "is-visible",
+    isAfterMainStart && isBeforeFooter
+  );
+}
+
+window.addEventListener("scroll", updateArticleFloatingNav, { passive: true });
+window.addEventListener("resize", updateArticleFloatingNav);
+window.addEventListener("load", updateArticleFloatingNav);

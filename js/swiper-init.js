@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       sectionName: "피플 인사이트",
       theme: "AI로 만나는 영상콘텐츠 제작의 세계",
-      item: "인간 PD가 경험한 AI 제작의 현재:<br>민성원 EBS PD",
+      item: "셀럽 IP와 영상콘텐츠 생태계의 확장:<br>민성원 EBS PD",
       img: "./img/manuscript7/banner.png",
       imgMobile: "./img/manuscript7/banner.png",
       bgPosition: "right center",

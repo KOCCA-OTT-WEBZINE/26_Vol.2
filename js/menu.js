@@ -30,7 +30,7 @@ const trendItem = {
 
 const peopleItem = {
   0: {
-    title: "인간 PD가 경험한 AI 제작의 현재",
+    title: "셀럽 IP와 영상콘텐츠 생태계의 확장",
     author: { name: "민성원", affiliation: "EBS PD" },
   },
 };

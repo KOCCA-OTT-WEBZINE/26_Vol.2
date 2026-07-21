@@ -355,10 +355,15 @@ sup {
   line-height: 1.6;
 
   text-align: left;
-  word-break: keep-all;
+  word-break: break-all;
   overflow-wrap: break-word;
   line-break: strict;
   text-justify: inter-character;
+
+  padding-left: 1.1em;
+  text-indent: -1.1em;
+
+  color: var(--primary-500);
 }
 
 @media (max-width: 768px) {
@@ -496,7 +501,6 @@ sup {
 
 .opinion-contents {
   font-size: 16px;
-  font-style: italic;
   line-height: 1.6;
   text-align: justify;
 }
@@ -675,6 +679,11 @@ sup {
   flex-direction: column;
   gap: 16px;
   margin-top: var(--content-spacing);
+
+  padding: 28px;
+  background-color: var(--gray-100);
+  border:1px solid var(--gray-200);
+  border-radius: 20px;
 }
 
 
@@ -706,11 +715,6 @@ sup {
   text-decoration: underline;
 }
 
-#annotation .reference-items li {
-  padding-left: 0em;
-  text-indent: 0em;
-}
-
 @media (max-width: 1280px) {
   .reference-list {
     margin-top: 80px;
@@ -721,6 +725,8 @@ sup {
   .reference-list {
     margin-top: 60px;
     gap: 8px;
+    padding: 16px;
+    border-radius: 12px;
   }
 
   .reference-items {
@@ -1489,8 +1495,11 @@ sup {
 
 .section-notes {
   margin-top: 40px;
-  padding-top: 20px;
-  border-top: 1px solid rgba(32, 36, 40, 0.16);
+
+  padding: 28px;
+  background-color: var(--gray-100);
+  border:1px solid var(--gray-200);
+  border-radius: 20px;
 }
 
 .section-note-items {
@@ -1501,13 +1510,16 @@ sup {
   list-style: none;
   font-size: 16px;
   line-height: 1.8;
-  color: var(--gray-600);
+  color: var(--gray-700);
 }
 
 .section-note-items li {
   padding-left: 0em;
   text-indent: 0em;
   scroll-margin-top: 600px;
+
+  padding-left: 1.2em;
+  text-indent: -1.2em;
 }
 
 .section-note-items a {
@@ -1517,4 +1529,16 @@ sup {
 
 .section-note-items a:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .section-notes {
+    margin-top: 28px;
+    padding: 16px;
+    border-radius: 12px;
+  }
+
+  .section-note-items {
+    font-size: 14px;
+  }
 }

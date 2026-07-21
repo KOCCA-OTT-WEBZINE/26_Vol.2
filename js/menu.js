@@ -4,7 +4,7 @@ const spotlightItem = {
     author: { name: "최민근", affiliation: "MBC 글로벌IP 제작팀 PD" },
   },
   1: {
-    title: "AI로 확장하는 팬덤 IP, <와이낫미디어>, 이민석 대표",
+    title: "AI로 확장하는 팬덤 IP <와이낫미디어>, 이민석 대표",
     author: { name: "이민석", affiliation: "㈜와이낫미디어 Founder / CEO" },
   },
   2: {
@@ -64,7 +64,7 @@ const globalItem = {
 
 const dataPointItem = {
   0: {
-    title: "데이터로 읽는 글로벌 OTT 콘텐츠 소비 취향",
+    title: "[2026년 2분기] 데이터로 읽는 글로벌 OTT 콘텐츠 소비 취향",
   },
   1: {
     title: "글로벌 OTT 사업자의 광고 생태계 재편과 경쟁전략: 

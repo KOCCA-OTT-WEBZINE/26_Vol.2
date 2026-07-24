@@ -1233,7 +1233,7 @@ sup {
 .insight-number {
   display: block;
   margin-bottom: 8px;
-  color: #1F5FA8;
+  color: var(--primary-500);
   font-size: 22px;
   font-weight: 600;
 }

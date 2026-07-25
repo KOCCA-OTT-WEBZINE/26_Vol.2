@@ -1470,10 +1470,6 @@ div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a
   display: flex;
   align-items: center;
   gap: 4px;
-  border-radius: 9999px;
-  padding: 4px 8px;
-  background-color: rgba(255, 255, 255, 0.8);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
 }
 
 .global-flag-na { border: 1px solid #e6eef8; }

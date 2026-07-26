@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       sectionName: "글로벌 마켓 리포트",
       theme: "",
-      item: "북미, 남중미, 유럽, 아시아, 중동 ∙ 아프리카, 대양주<br>주요 이슈 리포트",
+      item: "북미, 중남미, 유럽, 아시아, 중동 ∙ 아프리카, 대양주<br>주요 이슈 리포트",
       img: "./img/global/banner.png",
       imgMobile: "./img/global/banner.png",
       bgPosition: "right center",

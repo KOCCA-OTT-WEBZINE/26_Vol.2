@@ -76,7 +76,7 @@ const globalItem = {
     title: "북미",
   },
   1: {
-    title: "남중미",
+    title: "중남미",
   },
   2: {
     title: "유럽",

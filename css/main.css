@@ -324,12 +324,29 @@ div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a
 }
 
 .section-title {
-  font-size: 28px;
+  border-bottom: 1px solid #444;
+  padding-bottom: 16px;
+  margin-bottom: 8px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+
+  line-height:1.2;
+}
+
+.section-title > h2 {
+  font-size: 32px;
   color: white;
   font-weight: 600;
-  border-bottom: 1px solid #444;
-  padding-bottom: 8px;
-  margin-bottom: 8px;
+}
+
+.section-title > #menu-spotlight-subject {
+  font-size: 20px;
+  color: white;
+  font-weight: 400;
+
+  text-align: right;
 }
 
 .section-list {
@@ -360,6 +377,34 @@ div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a
 @media (max-width: 768px) {
   .menu-header {
     margin-bottom: 40px;
+  }
+
+  .section-title {
+    border-bottom: 1px solid #444;
+    padding-bottom: 16px;
+    margin-bottom: 8px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    justify-content: space-between;
+    align-items: baseline;
+
+    line-height:1.2;
+  }
+
+  .section-title > h2 {
+    font-size: 28px;
+    color: white;
+    font-weight: 600;
+  }
+
+  .section-title > #menu-spotlight-subject {
+    font-size: 16px;
+    color: white;
+    font-weight: 400;
+
+    width: 100%;
   }
 }
 

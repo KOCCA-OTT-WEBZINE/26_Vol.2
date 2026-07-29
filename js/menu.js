@@ -229,8 +229,16 @@ document.addEventListener("DOMContentLoaded", () => {
       const section = document.createElement("div");
       section.className = "menu-section";
 
+      const sectionDescription =
+        path === "spotlight"
+          ? `<p id="menu-spotlight-subject">숏드라마, 트렌드와 비즈니스 전략 사이에서</p>`
+          : "";
+
       section.innerHTML = `
-        <h2 class="section-title">${label}</h2>
+        <div class="section-title">
+          <h2>${label}</h2>
+          ${sectionDescription}
+        </div>
 
         <ul class="section-list">
           ${Object.entries(items)
@@ -240,7 +248,9 @@ document.addEventListener("DOMContentLoaded", () => {
               return `
                 <li class="section-item">
                   <a href="./${path}_${Number(key) + 1}.html" class="menu-link">
-                    <p>${highlightQuotes(stripFootnotesAndTags(item.title))}</p>
+                    <p>${highlightQuotes(
+                      stripFootnotesAndTags(item.title)
+                    )}</p>
                     ${authors}
                   </a>
                 </li>

@@ -1172,10 +1172,10 @@ div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a
 .people-subject-pc {
   margin-left: 24px;
 }
-
+/* 
 .people-subject-m {
   width: fit-content;
-}
+} */
 
 .people-content-row {
   display: flex;

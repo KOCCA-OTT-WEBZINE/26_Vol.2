@@ -1486,7 +1486,7 @@ sup {
 .note-link {
   position: relative;
   display: inline;
-  margin: 0;
+  margin: 0 0 0 -0.2em;
   padding: 0;
   border: 0;
 

@@ -1484,8 +1484,9 @@ sup {
 
 /* 본문 주석 버튼 */
 .note-link {
+  position: relative;
   display: inline;
-  margin: 0 0 0 -0.2em;
+  margin: 0;
   padding: 0;
   border: 0;
 
@@ -1497,6 +1498,47 @@ sup {
   line-height: inherit;
 
   cursor: pointer;
+  text-decoration: none;
+
+  isolation: isolate;
+}
+
+.note-link::before {
+  content: "";
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+
+  background: color-mix(
+    in srgb,
+    var(--brand-color, #ef765f) 18%,
+    transparent
+  );
+
+  opacity: 0;
+  pointer-events: none;
+
+  transform: translate(-50%, -50%) scale(0.3);
+
+  transition:
+    transform 0.35s ease,
+    opacity 0.35s ease;
+}
+
+.note-link:hover::before,
+.note-link:focus-visible::before {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.note-link:hover,
+.note-link:focus-visible {
   text-decoration: none;
 }
 

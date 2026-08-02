@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	let showTimer = null;
 	let hideTimer = null;
 
-	const SHOW_DELAY = 500;
+	const SHOW_DELAY = 300;
 	const HIDE_DELAY = 150;
 	const hoverMedia = window.matchMedia("(hover: hover)");
 
